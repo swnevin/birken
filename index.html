@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birken Testside</title>
+   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSDC4VpqH2oT2HdcETwcLzLrEdAOQjR5QOyg&s" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.postimg.cc/c4HK3KZx/Skjermbilde-2025-01-16-145545.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .content {
+      text-align: center;
+      color: white;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+      margin: 50px auto;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-size: cover;
+      }
+
+      .content {
+        margin: 20px;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content {
+        margin: 10px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <script src="https://swnevin.github.io/birken/extensions.js"></script>
+  <script type="text/javascript">
+    let proactiveMessage = "Hei, jeg hjelper deg gjerne!👋";
+
+    (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '678e2b0cc281e62ca5f3d6da' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          allowDangerousHTML: true,
+          assistant: {
+            stylesheet: "https://swnevin.github.io/birken/style.css",
+            extensions: [FormExtension]
+          }
+        }).then(() => {
+          console.log('Voiceflow widget loaded successfully');
+          window.voiceflow.chat.proactive.clear();
+          window.voiceflow.chat.proactive.push(
+            { type: 'text', payload: { message: proactiveMessage } }
+          );
+        }).catch((err) => console.error('Widget load failed:', err));
+      };
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+      v.type = "text/javascript";
+      s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</body>
+</html>
