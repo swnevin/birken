@@ -58,7 +58,7 @@
   
   .vfrc-chat--session-time,
   .vfrc-chat--status {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='60' y='30' fill='%2301060a' font-family='Arial' font-size='13'>Marabot</text></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='60' y='30' fill='%2301060a' font-family='Arial' font-size='13'>Birk</text></svg>");
   background-repeat: no-repeat;
   background-position: left;
   }
