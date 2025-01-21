@@ -42,7 +42,7 @@
   .vfrc-assistant-info--description {
   color: var(--text-color-secondary);
   font-size: 1.12em;
-  transform: translateY(-3.5em);
+  transform: translateY(-2.5em);
   line-height: 1.5em; 
   overflow: visible; 
   white-space: normal; 
