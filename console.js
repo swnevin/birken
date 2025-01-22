@@ -134,7 +134,6 @@ let proactiveMessage = "Hei, jeg hjelper deg gjerne!👋";
           versionID: 'production',
           allowDangerousHTML: true,
           assistant: {
-            stylesheet: "https://swnevin.github.io/birken/style.css",
             extensions: [FormExtension]
           }
         }).then(() => {
@@ -145,7 +144,7 @@ let proactiveMessage = "Hei, jeg hjelper deg gjerne!👋";
           );
         }).catch((err) => console.error('Widget load failed:', err));
       };
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
       v.type = "text/javascript";
       s.parentNode.insertBefore(v, s);
     })(document, 'script');
