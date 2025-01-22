@@ -11,67 +11,67 @@ const FormExtension = {
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
       form {
       font-family: 'Roboto', sans-serif;
-    max-width: 100%;
-    margin: auto;
-    padding: 0px;
-    background-color: transparent;
-    border-radius: 8px;
-  }
+      max-width: 90%; /* Redusert bredde */
+      margin: auto;
+      padding: 10px; /* Mindre padding */
+      background-color: transparent;
+      border-radius: 8px;
+    }
 
-  label {
-    font-size: 1em;
-    color: #333;
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: 500;
-  }
+    label {
+      font-size: 0.9em; /* Mindre fontstørrelse */
+      color: #333;
+      display: block;
+      margin: 8px 0 4px; /* Mindre marginer */
+      font-weight: 500;
+    }
 
-  input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    border: 2px solid #003677; /* Tykkere kant med ny farge */
-    background-color: #fff;
-    color: #333;
-    margin: 10px 0;
-    padding: 10px;
-    outline: none;
-    font-size: 1em;
-    font-family: Arial, sans-serif; /* Bytter til Arial */
-    border-radius: 8px; /* Avrundede hjørner */
-    box-sizing: border-box;
-  }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      border: 1px solid #003677; /* Tynnere kant */
+      background-color: #fff;
+      color: #333;
+      margin: 8px 0; /* Mindre marginer */
+      padding: 8px; /* Mindre padding */
+      outline: none;
+      font-size: 0.9em; /* Mindre fontstørrelse */
+      font-family: Arial, sans-serif;
+      border-radius: 6px; /* Mindre avrunding */
+      box-sizing: border-box;
+    }
 
-  textarea {
-    height: 100px;
-  }
+    textarea {
+      height: 80px; /* Mindre høyde */
+    }
 
-  .invalid {
-    border-color: red;
-  }
+    .invalid {
+      border-color: red;
+    }
 
-  .submit {
-    background-color: #003677; /* Ny farge */
-    border: none;
-    color: white;
-    padding: 12px;
-    border-radius: 8px; /* Avrundede hjørner */
-    margin-top: 20px;
-    width: 100%;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 500;
-  }
+    .submit {
+      background-color: #003677;
+      border: none;
+      color: white;
+      padding: 10px; /* Mindre padding */
+      border-radius: 6px; /* Mindre avrunding */
+      margin-top: 16px; /* Mindre toppmargin */
+      width: 100%;
+      cursor: pointer;
+      font-size: 0.9em; /* Mindre fontstørrelse */
+      font-weight: 500;
+    }
       </style>
 
       <label for="email">Mail</label>
       <input type="email" class="email" name="email" required
              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-             title="Ugyldig e-post"><br><br>
+             title="Ugyldig e-post"><br>
 
       <label for="topic">Emne</label>
-      <input type="text" class="topic" name="topic" required><br><br>
+      <input type="text" class="topic" name="topic" required><br>
 
       <label for="userQuestion">Melding</label>
-      <textarea class="userQuestion" name="userQuestion" required></textarea><br><br>
+      <textarea class="userQuestion" name="userQuestion" required></textarea><br>
 
       <input type="submit" class="submit" value="Send">
     `;
