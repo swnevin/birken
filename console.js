@@ -11,37 +11,37 @@ const FormExtension = {
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
       form {
       font-family: 'Roboto', sans-serif;
-      max-width: 90%; /* Redusert bredde */
+      max-width: 85%;
       margin: auto;
-      padding: 10px; /* Mindre padding */
+      padding: 8px;
       background-color: transparent;
       border-radius: 8px;
     }
 
     label {
-      font-size: 0.9em; /* Mindre fontstørrelse */
+      font-size: 0.7em; /* Justert til lik størrelse som chatten */
       color: #333;
       display: block;
-      margin: 8px 0 4px; /* Mindre marginer */
+      margin: 6px 0 3px;
       font-weight: 500;
     }
 
     input[type="text"], input[type="email"], textarea {
       width: 100%;
-      border: 1px solid #003677; /* Tynnere kant */
+      border: 1px solid #003677;
       background-color: #fff;
       color: #333;
-      margin: 8px 0; /* Mindre marginer */
-      padding: 8px; /* Mindre padding */
+      margin: 6px 0;
+      padding: 6px;
       outline: none;
-      font-size: 0.9em; /* Mindre fontstørrelse */
+      font-size: 0.7em; /* Justert til lik størrelse som chatten */
       font-family: Arial, sans-serif;
-      border-radius: 6px; /* Mindre avrunding */
+      border-radius: 6px;
       box-sizing: border-box;
     }
 
     textarea {
-      height: 80px; /* Mindre høyde */
+      height: 70px;
     }
 
     .invalid {
@@ -52,12 +52,12 @@ const FormExtension = {
       background-color: #003677;
       border: none;
       color: white;
-      padding: 10px; /* Mindre padding */
-      border-radius: 6px; /* Mindre avrunding */
-      margin-top: 16px; /* Mindre toppmargin */
+      padding: 8px;
+      border-radius: 6px;
+      margin-top: 12px;
       width: 100%;
       cursor: pointer;
-      font-size: 0.9em; /* Mindre fontstørrelse */
+      font-size: 0.7em; /* Justert til lik størrelse som chatten */
       font-weight: 500;
     }
       </style>
@@ -121,6 +121,7 @@ const FormExtension = {
     element.appendChild(formContainer);
   },
 };
+
 
 
 let proactiveMessage = "Hei, jeg hjelper deg gjerne!👋";
