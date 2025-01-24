@@ -57,7 +57,7 @@
           versionID: 'production',
           allowDangerousHTML: true,
           assistant: {
-            extensions: [FormExtension]
+            extensions: [FormExtension, WaitingAnimationExtension, DoneAnimationExtension]
           }
         }).then(() => {
           console.log('Voiceflow widget loaded successfully');
