@@ -1,6 +1,6 @@
 // This extension shows a waiting animation with customizable text and delay
 // Also checking for the vf_done value to stop/hide the animation if it's true
-export const WaitingAnimationExtension = {
+const WaitingAnimationExtension = {
   name: 'WaitingAnimation',
   type: 'response',
   match: ({ trace }) =>
@@ -96,7 +96,7 @@ export const WaitingAnimationExtension = {
 // This extension triggers a "done" action,
 // typically used to signal the completion of a task
 // and hide a previous WaitingAnimation
-export const DoneAnimationExtension = {
+const DoneAnimationExtension = {
   name: 'DoneAnimation',
   type: 'response',
   match: ({ trace }) =>
